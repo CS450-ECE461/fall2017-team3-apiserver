@@ -1,6 +1,4 @@
-var blueprint  = require ('@onehilltech/blueprint')
-  , gatekeeper = require ('@onehilltech/gatekeeper')
-  ;
+var blueprint  = require ('@onehilltech/blueprint');
 
 module.exports = exports = {
 
