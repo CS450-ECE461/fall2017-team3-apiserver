@@ -30,6 +30,9 @@ build/Release
 # IDE folders
 .idea
 
+# DS_STORE
+.DS_STORE
+
 # Dependency directories
 node_modules
 jspm_packages
