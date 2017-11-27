@@ -5,7 +5,7 @@ module.exports = exports = {
     post : { action : 'UserController@getUser'},
 
     '/:userID': {
-    	get   : { action: 'UserController@getAll'}
+    	get   : { action: 'UserController@getUser'}
     }
   }
 };
