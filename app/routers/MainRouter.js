@@ -1,6 +1,10 @@
+var blueprint  = require ('@onehilltech/blueprint');
+
 module.exports = exports = {
-  '/helloworld' : {
-    get  : { view   : 'helloworld.pug' },
-    post : { action : 'HelloWorldController@echoName'},
+
+  '/gatekeeper': blueprint ('router://@onehilltech/blueprint-gatekeeper:v1'),
+
+  '/v1': {
+    policy: 'gatekeeper.auth.bearer'
   }
 };

@@ -30,8 +30,8 @@ build/Release
 # IDE folders
 .idea
 
-# DS_STORE
-.DS_STORE
+#DS_Store
+.DS_Store
 
 # Dependency directories
 node_modules
