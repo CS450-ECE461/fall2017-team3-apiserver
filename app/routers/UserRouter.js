@@ -1,7 +1,7 @@
 module.exports = exports = {
   '/users' : {
-    	resource: {
-    			controller: 'UserController'
-  		}
-  	}
+		resource: {
+				controller: 'UserController'
+		}
+	}
 };

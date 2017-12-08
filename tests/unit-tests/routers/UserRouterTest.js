@@ -37,6 +37,7 @@ describe ('UserRouter', function () {
         let params = {
           user: {
             name: "Steve",
+            email: "steve@no-reply.com",
             _id: "5a28589955d94861fa56006d"
           }
         };

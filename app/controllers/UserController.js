@@ -8,8 +8,6 @@ function UserController () {
   ResourceController.call (this, {model: User});
 }
 
-
-
 blueprint.controller (UserController, ResourceController);
 
 module.exports = UserController;
