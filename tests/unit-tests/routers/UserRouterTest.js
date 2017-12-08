@@ -28,21 +28,41 @@ describe ('UserRouter', function () {
       context ('GET', function () {
         it ('should get a users in the database by ID', function (done) {
           blueprint.testing.request ()
-            .get ('/users/5a28589955d94861fa56006d')
+            .get ('/users/5a2ada1230fa547da57f51cb')
             .expect (200, done);
         });
       });
       context ('POST', function () {
         it ('should create a user in the database with the given ID', function (done) {
+        let params = {
+          user: {
+            name: "Steve",
+            _id: "5a28589955d94861fa56006d"
+          }
+        };
+        blueprint.testing.request ()
+          .post ('/users/')
+          .send(params)
+          .expect (200, done);
+        });
+      });
+      context ('POST', function () {
+        it ('should update a user in the database with the given ID', function (done) {
           let params = {
             user: {
-              name: "Steve",
-              _id: "5a28589955d94861fa56006d"
+              name: "Richard"
             }
           };
           blueprint.testing.request ()
-            .post ('/users/')
+            .post ('/users/5a28589955d94861fa56006d')
             .send(params)
+            .expect (200, done);
+        });
+      });
+      context ('DELETE', function () {
+        it ('should delete a user in the database with the given ID', function (done) {
+          blueprint.testing.request ()
+            .delete ('/users/5a28589955d94861fa56006d')
             .expect (200, done);
         });
       });
