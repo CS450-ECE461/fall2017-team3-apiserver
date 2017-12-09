@@ -7,14 +7,14 @@ var mongodb = require ('@onehilltech/blueprint-mongodb')
 
 var schema = new mongodb.Schema ({
   name: {type: String, required: true},
-  rating: {type: Array, trim: true},
-  skills: {type: Array, trim: true},
-  email: {type: String, trim: true},
-  password: {type: String, trim: true},
-  description: {type: String, trim: true},
-  portfolio: {type: String, trim: true},
-  image: {type: String, trim: true},
-  projects: {type: String, trim: true}
+  rating: {type: [Number], required: true, trim: true},
+  skills: {type: [String], required: true, trim: true},
+  email: {type: String, required: true, trim: true},
+  phone: {type: String, required: true, trim: true},
+  description: {type: String, required: true, trim: true},
+  portfolio: {type: String, required: true, trim: true},
+  image: {type: String, required: true, trim: true},
+  projects: {type: [String], required: true, trim: true}
 });
 
 module.exports = mongodb.resource ('user', schema, 'blueprint_user');
