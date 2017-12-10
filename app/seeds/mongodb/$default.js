@@ -48,6 +48,29 @@ module.exports = {
   			status: true,
   			collaborators: ['userOneID','userTwoID','userThreeID'],
   			image: 'someLinkToImage'
+		},
+		{
+			name: 'Building a House',
+			description: 'A less interesting project',
+  			skills: ['Carpentry','Drywall','plumbing'],
+  			owner: 'some users ID',
+  			status: true,
+  			collaborators: ['userFourID','userFiveID','userSixID'],
+  			image: 'differentLinkToImage'
+  		}
+	],
+	messages: [
+		{
+			sender: 'userOneID',
+  			receiver: 'userTwoID',
+  			body: 'Hey bro how you doing where you been?',
+  			read: false
+		},
+		{
+			sender: 'userTwoID',
+  			receiver: 'userOneID',
+  			body: 'Great, just working on some class projects',
+  			read: false
 		}
 	]
 };
