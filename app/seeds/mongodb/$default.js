@@ -38,5 +38,16 @@ module.exports = {
 			image: 'someWhereInLA',
 			projects: ['Seventh', 'Eighth', 'Ninth']
 		}
+	],
+	projects: [
+		{
+			name: 'lasso',
+			description: 'A really excellent project',
+  			skills: ['JavaScript','Design','CSS'],
+  			owner: 'some users ID',
+  			status: true,
+  			collaborators: ['userOneID','userTwoID','userThreeID'],
+  			image: 'someLinkToImage'
+		}
 	]
 };
