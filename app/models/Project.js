@@ -10,7 +10,7 @@ var schema = new mongodb.Schema ({
   description: {type: String, required: true, trim: true},
   skills: {type: [String], required: true, trim: true},
   owner: {type: String, required: true, trim: true},
-  status: {type: Boolean, required: true, trim: true},
+  active: {type: Boolean, required: true, trim: true},
   collaborators: {type: [String], required: true, trim: true},
   image: {type: String, required: true}
 });

@@ -15,7 +15,17 @@ describe ('UserRouter', function () {
       it ('should create a user in the database', function (done) {
         let params = {
           user: {
-            name: "John"
+            id: 'test-user@example.com',
+            password: 'test',
+            name: 'John Doe',
+            rating: [1.2, 5],
+            skills: ['roofing', 'construction', 'land surveys'],
+            email: 'user_three@example.com',
+            image: '/assets/images/profile.png',
+            description: 'I build a house from the ground up!',
+            portfolio: 'projects.construction.com',
+            projects: ['project_2'],
+            phone: '317.444.5555'
           }
         };
         blueprint.testing.request ()
@@ -28,7 +38,7 @@ describe ('UserRouter', function () {
       context ('GET', function () {
         it ('should get a users in the database by ID', function (done) {
           blueprint.testing.request ()
-            .get ('/users/5a2ada1230fa547da57f51cb')
+            .get ('/users/5a319cbf9299f29bf63ec3af')
             .expect (200, done);
         });
       });
@@ -36,9 +46,18 @@ describe ('UserRouter', function () {
         it ('should create a user in the database with the given ID', function (done) {
         let params = {
           user: {
-            name: "Steve",
-            email: "steve@no-reply.com",
-            _id: "5a28589955d94861fa56006d"
+            _id: "5a28589955d94861fa56006d",
+            id: 'test-user@example.com',
+              password: 'test',
+            name: 'John Doe',
+            rating: [1.2, 5],
+            skills: ['roofing', 'construction', 'land surveys'],
+            email: 'user_three@example.com',
+            image: '/assets/images/profile.png',
+            description: 'I build a house from the ground up!',
+            portfolio: 'projects.construction.com',
+            projects: ['project_2'],
+            phone: '317.444.5555'
           }
         };
         blueprint.testing.request ()
@@ -51,11 +70,11 @@ describe ('UserRouter', function () {
         it ('should update a user in the database with the given ID', function (done) {
           let params = {
             user: {
-              name: "Richard"
+              name: "Richard Johnson"
             }
           };
           blueprint.testing.request ()
-            .post ('/users/5a28589955d94861fa56006d')
+            .post ('/users/5a319cbf9299f29bf63ec3af')
             .send(params)
             .expect (200, done);
         });
@@ -63,7 +82,7 @@ describe ('UserRouter', function () {
       context ('DELETE', function () {
         it ('should delete a user in the database with the given ID', function (done) {
           blueprint.testing.request ()
-            .delete ('/users/5a28589955d94861fa56006d')
+            .delete ('/users/5a319cbf9299f29bf63ec3af')
             .expect (200, done);
         });
       });
