@@ -1,4 +1,4 @@
-# frontend-app
+# backend-server
 
 This README outlines the details of collaborating on this Blueprint backend.
 
