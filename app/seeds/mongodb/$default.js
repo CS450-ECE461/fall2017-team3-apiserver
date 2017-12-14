@@ -88,7 +88,7 @@ module.exports = {
   ],
 	projects: [
     {
-      id: 'project_1',
+      title: 'project_1',
       name: 'Collaboration App',
       description: "Create an application to allow makers to connect with projects in their area." ,
       skills: ['web design', 'web development', 'software testing'],
@@ -98,7 +98,7 @@ module.exports = {
       image: '/assets/images/project.png'
     },
     {
-      id: 'project_2',
+      title: 'project_2',
       name: 'Building a Shed',
       description: 'building an awesome shed out of plastic',
       skills: ['construction', 'Land Surveying'],
@@ -108,7 +108,7 @@ module.exports = {
       image: '/assets/images/project.png'
     },
     {
-      id: 'project_3',
+      title: 'project_3',
       name: 'catering event',
       description: 'provide awesome food to an awesome event',
       skills: ['cooking', 'baking'],
@@ -118,7 +118,7 @@ module.exports = {
       image: '/assets/images/project.png'
     },
     {
-      id: 'project_4',
+      title: 'project_4',
       name: 'Educational Web App',
       description: 'To help Math students in our local school, I want to help create an educational app that provides sample problems and solutions to common assignments',
       skills: ['HTML', 'CSS', 'javascript','web development'],
