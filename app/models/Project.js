@@ -6,6 +6,7 @@ var mongodb = require ('@onehilltech/blueprint-mongodb')
 // use mongodb.Types to access mongoose.Types
 
 var schema = new mongodb.Schema ({
+  title: {type: String, required: true},
   name: {type: String, required: true},
   description: {type: String, required: true, trim: true},
   skills: {type: [String], required: true, trim: true},
